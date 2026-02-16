@@ -2,50 +2,64 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Undangan Pernikahan</title>
+  <title>Undangan Pernikahan Sakti & Pasangan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
+<!-- ===== EXPIRED MESSAGE ===== -->
 <div id="expired-message" class="hidden">
   <h1>Terima Kasih</h1>
   <p>Acara telah berlangsung dengan penuh kebahagiaan.</p>
 </div>
 
+<!-- ===== MAIN CONTENT ===== -->
 <div id="main-content">
 
+  <!-- HERO -->
   <section class="hero">
     <p class="subtitle">Dengan memohon rahmat Allah SWT</p>
-    <h1 class="names">Sakti<br>&<br>Pasangan</h1>
+    <h1 class="names">Sakti<br><span>&</span><br>Pasangan</h1>
     <p class="date">05 April 2026 | 09.00 - 16.00 WIB</p>
   </section>
 
-  <section class="countdown-section">
+  <!-- DIVIDER -->
+  <div class="divider"></div>
+
+  <!-- COUNTDOWN -->
+  <section class="section">
     <h2>Menuju Hari Bahagia</h2>
-    <div id="countdown" class="countdown"></div>
+
     <div class="countdown-grid">
-  <div class="time-box">
-    <span id="days">0</span>
-    <small>Hari</small>
-  </div>
-  <div class="time-box">
-    <span id="hours">0</span>
-    <small>Jam</small>
-  </div>
-  <div class="time-box">
-    <span id="minutes">0</span>
-    <small>Menit</small>
-  </div>
-  <div class="time-box">
-    <span id="seconds">0</span>
-    <small>Detik</small>
-  </div>
-</div>
+      <div class="time-box">
+        <span id="days">0</span>
+        <small>Hari</small>
+      </div>
+      <div class="time-box">
+        <span id="hours">0</span>
+        <small>Jam</small>
+      </div>
+      <div class="time-box">
+        <span id="minutes">0</span>
+        <small>Menit</small>
+      </div>
+      <div class="time-box">
+        <span id="seconds">0</span>
+        <small>Detik</small>
+      </div>
+    </div>
   </section>
 
-  <section class="details">
+  <div class="divider"></div>
+
+  <!-- LOKASI -->
+  <section class="section">
     <h2>Lokasi Acara</h2>
     <p>
       Dusun Jeruk Wangi<br>
@@ -55,8 +69,11 @@
     </p>
   </section>
 
-  <section class="doa">
-    <p>
+  <div class="divider"></div>
+
+  <!-- DOA -->
+  <section class="section">
+    <p class="doa-text">
       “Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup
       dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya.”
     </p>
@@ -64,6 +81,8 @@
 
 </div>
 
+<!-- JS -->
 <script src="script.js"></script>
+
 </body>
 </html>
